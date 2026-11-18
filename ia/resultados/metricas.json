@@ -1,0 +1,141 @@
+{
+  "janela_amostras": 15,
+  "janela_s": 1.5,
+  "limite_cm": 100.0,
+  "atributos": [
+    "ultimo",
+    "media",
+    "minimo",
+    "desvio",
+    "inclinacao",
+    "queda",
+    "sem_eco"
+  ],
+  "classes": [
+    "livre",
+    "aproximando",
+    "obstaculo"
+  ],
+  "arquivos": 15,
+  "amostras": 605,
+  "janelas_por_classe": {
+    "livre": 110,
+    "aproximando": 34,
+    "obstaculo": 250
+  },
+  "janelas_descartadas_pela_regra": {
+    "livre": 0,
+    "aproximando": 1,
+    "obstaculo": 0
+  },
+  "validacao": "deixando um arquivo de fora",
+  "acuracia": 0.9898,
+  "f1_macro": 0.9743,
+  "por_classe": {
+    "livre": {
+      "precisao": 0.9818,
+      "recall": 0.9818,
+      "f1": 0.9818,
+      "janelas": 110
+    },
+    "aproximando": {
+      "precisao": 0.9412,
+      "recall": 0.9412,
+      "f1": 0.9412,
+      "janelas": 34
+    },
+    "obstaculo": {
+      "precisao": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "janelas": 250
+    }
+  },
+  "matriz_confusao": {
+    "linhas_real_colunas_previsto": [
+      "livre",
+      "aproximando",
+      "obstaculo"
+    ],
+    "valores": [
+      [
+        108,
+        2,
+        0
+      ],
+      [
+        2,
+        32,
+        0
+      ],
+      [
+        0,
+        0,
+        250
+      ]
+    ]
+  },
+  "parametros_modelo": 24,
+  "comparacao": [
+    {
+      "configuracao": "Valores brutos, 2 s (formato da etapa anterior)",
+      "janelas": 320,
+      "janelas_aproximando": 10,
+      "acuracia": 0.9625,
+      "f1_macro": 0.8336294317206301,
+      "recall": {
+        "livre": 0.8823529411764706,
+        "aproximando": 0.8,
+        "obstaculo": 1.0
+      }
+    },
+    {
+      "configuracao": "Valores brutos, 1,5 s, limite 100 cm",
+      "janelas": 394,
+      "janelas_aproximando": 34,
+      "acuracia": 0.9720812182741116,
+      "f1_macro": 0.9277988582163532,
+      "recall": {
+        "livre": 0.9727272727272728,
+        "aproximando": 0.7647058823529411,
+        "obstaculo": 1.0
+      }
+    },
+    {
+      "configuracao": "Atributos de tendência, 1 s, limite 100 cm",
+      "janelas": 460,
+      "janelas_aproximando": 50,
+      "acuracia": 0.9630434782608696,
+      "f1_macro": 0.9213679521989349,
+      "recall": {
+        "livre": 0.9481481481481482,
+        "aproximando": 0.8,
+        "obstaculo": 1.0
+      }
+    },
+    {
+      "configuracao": "Atributos de tendência, 2 s, limite 100 cm",
+      "janelas": 320,
+      "janelas_aproximando": 10,
+      "acuracia": 1.0,
+      "f1_macro": 1.0,
+      "recall": {
+        "livre": 1.0,
+        "aproximando": 1.0,
+        "obstaculo": 1.0
+      }
+    },
+    {
+      "configuracao": "**Atributos de tendência, 1,5 s, limite 100 cm (escolhida)**",
+      "janelas": 394,
+      "janelas_aproximando": 34,
+      "acuracia": 0.9898477157360406,
+      "f1_macro": 0.974331550802139,
+      "recall": {
+        "livre": 0.9818181818181818,
+        "aproximando": 0.9411764705882353,
+        "obstaculo": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# segredos do carrinho
+firmware/onibus_escala/credenciais.h
+
+# saídas temporárias dos testes
+testes/host/saida_*.json
+
+__pycache__/
+.venv/
+*.o
+.DS_Store
