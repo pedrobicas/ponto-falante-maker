@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="22mm" viewBox="0 0 76 22">
+  <!-- Letreiro para o suporte iluminado. Imprima em tamanho real (100%) em papel comum ou acetato.
+       Linha 875A-10, sentido Perdizes: passa no ponto 70016916 (Av. Paulista, 1374) segundo o GTFS do MVP. -->
+  <rect width="76" height="22" fill="#0b0c0e"/>
+  <rect x="0.4" y="0.4" width="75.2" height="21.2" fill="none" stroke="#2b2f36" stroke-width="0.4"/>
+  <text x="38" y="10.9" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-weight="700"
+        font-size="9.4" fill="#ffb21e" letter-spacing="0.3">875A-10</text>
+  <text x="38" y="18.1" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-weight="700"
+        font-size="5.2" fill="#ffb21e" letter-spacing="0.5">PERDIZES</text>
+</svg>
