@@ -1,0 +1,21 @@
+name: testes
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  firmware-e-modelo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r ia/requirements.txt
+      - name: Firmware com o modelo versionado
+        run: bash testes/rodar.sh
+      - name: Retreino reproduz o modelo e passa nos mesmos testes
+        run: |
+          python ia/treinar.py
+          bash testes/rodar.sh
