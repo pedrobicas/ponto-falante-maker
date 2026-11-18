@@ -19,7 +19,7 @@ para, mantém o letreiro aceso quando escurece e conversa com o MVP pelo contrat
 
 ## Vídeo de demonstração (até 6 min)
 
-**Link:** _inserir após a gravação_ · roteiro em [`docs/roteiro_video.md`](docs/roteiro_video.md)
+**Link:** _inserir após a gravação_
 
 ---
 
@@ -189,8 +189,7 @@ O GND do ESP32 e o da ponte H precisam estar em comum. O OLED é opcional: sem e
 - o LDR fica na torre lateral, isolado da luz do LED, com passagem para os fios por baixo;
 - duas abas com furo M3 para parafusar ou colar na frente do carrinho.
 
-Impressão: face de trás na mesa (assim não há ponte longa), PLA, 0,2 mm, sem suporte. O letreiro para imprimir em
-tamanho real está em [`cad/letreiro_875A-10.svg`](cad/letreiro_875A-10.svg).
+Impressão: face de trás na mesa (assim não há ponte longa), PLA, 0,2 mm, sem suporte.
 
 ## 6. Como reproduzir
 
@@ -301,6 +300,6 @@ ao MVP. Esses ficam para o teste de bancada e o vídeo.
 | [`firmware/onibus_escala/`](firmware/onibus_escala/) | Sketch do ESP32 em módulos: motores, filtro, classificador, piloto, letreiro, alertas, display, painel e cliente do MVP |
 | [`ia/`](ia/) | Treino, exportação do modelo e resultados |
 | [`dataset/`](dataset/) | 15 CSVs e a metodologia |
-| [`cad/`](cad/) | Peça em STL, script que a gera e o letreiro para imprimir |
+| [`cad/`](cad/) | Peça em STL e o script que a gera |
 | [`testes/`](testes/) | Testes no PC com stubs do Arduino, validação dos JSON e painel simulado (`python testes/painel/servidor_simulado.py`) |
-| [`docs/`](docs/) | Roteiro do vídeo e imagens |
+| [`docs/img/`](docs/img/) | Imagens do README |
