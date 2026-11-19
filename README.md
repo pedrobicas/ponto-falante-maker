@@ -19,7 +19,7 @@ para, mantém o letreiro aceso quando escurece e conversa com o MVP pelo contrat
 
 ## Vídeo de demonstração (até 6 min)
 
-**Link:** _inserir após a gravação_
+**Link:** https://youtube.com/shorts/Ma1ODULkYYI
 
 ---
 
